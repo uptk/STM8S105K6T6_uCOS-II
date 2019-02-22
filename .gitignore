@@ -1,0 +1,37 @@
+# 此为注释 – 将被 Git 忽略
+# 忽略所有 .a 结尾的文件
+##*.a
+# 但 lib.a 除外
+##!lib.a
+# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+##/TODO
+# 忽略 build/ 目录下的所有文件
+##build/
+# 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+##doc/*.txt
+# 忽略 doc/ 目录下所有扩展名为 txt 的文件
+##doc/**/*.txt
+#
+#
+#	my ignore
+#	排除所有目录和文件
+*
+#	保留目录
+!*/
+#	排除目录/Software/EvalBoards/ST/下除STM8S105K6T6的目录
+/Software/EvalBoards/ST/*/
+!/Software/EvalBoards/ST/STM8S105K6T6
+#	排除以下目录
+ARM-Cortex-M0/
+GNU/
+IAR/
+RealView/
+#	保留.gitignore,README.md
+!.gitignore
+!README.md
+#	保留.c .h .s文件
+!*.[cChHsS]
+#	保留.asm文件
+!*.asm
+!*.ASM
+#
